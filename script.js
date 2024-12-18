@@ -16,3 +16,24 @@ colorRadios.forEach((radio, index) => {
     productImage.src = images[index];
   });
 });
+
+// Catch items for update items quantity
+const qtyMinus = document.getElementById('qtyMinus');
+const qtyPlus = document.getElementById('qtyPlus');
+const itemQty = document.getElementById('itemQty');
+
+let quantity = 0;
+
+// Minus item quantity
+qtyMinus.addEventListener('click', () => {
+  if (quantity > 0) {
+    quantity--;
+    itemQty.innerText = quantity; 
+  }
+});
+
+// Plus items quantity
+qtyPlus.addEventListener('click', () => {
+  quantity++;
+  itemQty.innerText = quantity; 
+});

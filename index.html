@@ -266,19 +266,22 @@
           <div class="flex items-center gap-3 mt-[20px]">
             <div class="flex items-center justify-center bg-gray-50">
               <button
+                id="qtyMinus"
                 class="border flex items-center justify-center w-[40px] h-[40px] text-4xl text-[#8091A7] transition-transform duration-150 active:scale-95 rounded-l-md"
               >
-                <img src="https://i.ibb.co/XSjvvnK/3-M.png" alt="" />
+                <img src="https://i.ibb.co/xfzTrQs/7-D.png" alt="" />
               </button>
               <span
+                id="itemQty"
                 class="border flex items-center justify-center w-[40px] h-[40px] text-xl"
               >
                 0
               </span>
               <button
+                id="qtyPlus"
                 class="border flex items-center justify-center w-[40px] h-[40px] text-4xl text-[#8091A7] transition-transform duration-150 active:scale-95 rounded-r-md"
               >
-                <img src="https://i.ibb.co/xfzTrQs/7-D.png" alt="" />
+                <img src="https://i.ibb.co/XSjvvnK/3-M.png" alt="" />
               </button>
             </div>
 
@@ -296,6 +299,17 @@
         </div>
       </div>
     </section>
+    <button
+      class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-[#FFBB5A] hover:bg-[#FFBB5A]/90 text-gray-800 font-semibold px-[24px] py-[8px] rounded-full inline-flex items-center shadow-lg shadow-[#0000001A]"
+    >
+      <span>Checkout</span>
+      <span
+        id="checkoutCount"
+        class="ml-2 bg-white text-[#364A63] text-[14px] font-bold rounded-lg px-2 py-0.5 leading-none"
+      >
+        0
+      </span>
+    </button>
 
     <script src="./script.js"></script>
   </body>
