@@ -12,17 +12,22 @@
   </head>
   <body>
     <section class="w-[1280px] mx-auto">
-      <div class="flex gap-[60px] mt-36">
-        <div class="w-[50%] h-[50vh]">
+      <div class="flex items-center justify-center gap-[60px] h-screen">
+        <!-- Product image part -->
+        <div class="max-w-[630px] h-[721px]">
           <img
             src="https://s3-alpha-sig.figma.com/img/2976/f5db/6ba4ac91a82300df8837e8cb1806acad?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JWohOss7IT3sFIlcvK51H8ZzbWybTA1iKcSGv~PA8-U~YPU~RkdcI2HWobSAmm-Fg~yuq2QqUZ0zJk29p92tuZjXd~eEq1QhvjnmcCbZDI3OJll-d5QdTF8Eh0rLZ84QPh1tUHhHHTjMmd7kipU4vXQmNeYMXIkdA5bvJb8Va2WMHSNrL-yNgpc3I0H~g4uovmHKYDsGEY~HVdxnW8kFTZVTb4lO1teRyTNrVVPZZzb7kpBRmhcdJTw~Lprkb3zUQllVs06trpyGIm8LzxsVH2CYSo7qvvvyLCmlDS2co5UM~XDu3TMvatS3lAObPy4bHd~-m1jagpGa6HUttU~mng__"
             alt=""
+            class="h-full w-full rounded-md object-cover object-center"
           />
         </div>
-        <div class="w-[50%] h-[50vh]">
+
+        <!-- Content part -->
+        <div class="w-[50%]">
           <h2 class="text-[40px] text-[#364A63] font-bold">
             Classy Modern Smart watch
           </h2>
+          <!-- Ratings -->
           <div class="flex items-center gap-2 mt-[10px]">
             <div class="text-[#FFD200]">
               <i class="fa-solid fa-star"></i>
@@ -33,28 +38,35 @@
             </div>
             <div class="text-[#8091A7] font-light">(2 Reviews)</div>
           </div>
-          <h4 class="mt-[20px] text-[20px]">
-            <span class="line-through text-[#8091A7] font-light">$999.00</span
-            ><span class="text-[#6576FF] font-bold">$79.00</span>
-          </h4>
-          <p class="text-[18px] text-[#8091A7] leading-loose">
-            I must explain to you how all this mistaken idea of denoun cing ple
-            praising pain was born and I will give you a complete account of the
-            system, and expound the actual teaching.
-          </p>
-          <div class="flex items-center gap-5">
-            <span class="text-[14px] text-[#8091A7] font-light">
-              <p>Type</p>
-              <p>Watch</p>
+          <!-- Title and descriptions -->
+          <div>
+            <h3 class="mt-[20px] text-[20px]">
+              <span class="line-through text-[#8091A7] font-light">$999.00</span
+              ><span class="text-[#6576FF] font-bold">$79.00</span>
+            </h3>
+            <p class="text-[18px] text-[#8091A7] leading-loose">
+              I must explain to you how all this mistaken idea of denoun cing
+              ple praising pain was born and I will give you a complete account
+              of the system, and expound the actual teaching.
+            </p>
+          </div>
+          <!-- Types and Models -->
+          <div class="flex items-center gap-5 mt-[20px]">
+            <span class="text-[#8091A7] font-light">
+              <p class="text-[14px]">Type</p>
+              <p class="text-[16px] font-bold">Watch</p>
             </span>
             <span class="text-[14px] text-[#8091A7] font-light">
-              <p>Model Number</p>
-              <p>Forerunner 290XT</p>
+              <p class="text-[14px]">Model Number</p>
+              <p class="text-[16px] font-bold">Forerunner 290XT</p>
             </span>
           </div>
-          <div>
-            Band Color
-            <div class="flex gap-10">
+          <div class="mt-[20px]">
+            <h4 class="text-[#364A63] text-[18px] font-bold mb-[10px]">
+              Band Color
+            </h4>
+            <!-- Brand Colors -->
+            <div class="flex gap-[20px]">
               <div class="inline-flex items-center">
                 <label
                   class="relative flex items-center cursor-pointer"
@@ -140,28 +152,145 @@
                 </label>
               </div>
             </div>
+          </div>
+          <!-- Sizes -->
+          <div class="mt-[20px] mb-[10px]">
+            <h4 class="text-[#364A63] text-[18px] font-bold mb-[10px]">
+              Wrist Size
+            </h4>
+            <div id="wristSize" class="flex gap-2">
+              <!-- Size S -->
+              <div>
+                <input
+                  class="peer sr-only"
+                  value="s69"
+                  name="size"
+                  id="s69"
+                  type="radio"
+                  checked
+                />
+                <div
+                  class="flex h-[36px] w-[73px] cursor-pointer overflow-hidden flex-col items-center justify-center rounded-md order-2 border border-gray-300 bg-gray-50 transition-transform duration-150 hover:border-blue-400 active:scale-95 peer-checked:border-[#816BFF]"
+                >
+                  <label
+                    class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase peer-checked:text-[#816BFF]"
+                    for="s69"
+                  >
+                    <span class="text-[#364A63] text-[18px] font-bold mr-1"
+                      >S</span
+                    >$69
+                  </label>
+                </div>
+              </div>
 
-            <div>
-              <h4>Wrist Size</h4>
+              <!-- Size M -->
               <div>
-                <input type="radio" name="cf" id="1" />
-                <input type="radio" name="cf" id="2" />
-                <input type="radio" name="cf" id="3" />
-                <input type="radio" name="cf" id="4" />
+                <input
+                  class="peer sr-only"
+                  value="m79"
+                  name="size"
+                  id="m79"
+                  type="radio"
+                />
+                <div
+                  class="flex h-[36px] w-[73px] cursor-pointer overflow-hidden flex-col items-center justify-center rounded-md order-2 border border-gray-300 bg-gray-50 transition-transform duration-150 hover:border-blue-400 active:scale-95 peer-checked:border-[#816BFF]"
+                >
+                  <label
+                    class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase text-[#364A63] peer-checked:text-[#816BFF]"
+                    for="m79"
+                  >
+                    <span
+                      class="text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
+                      >M</span
+                    >$79
+                  </label>
+                </div>
+              </div>
+
+              <!-- Size L -->
+              <div>
+                <input
+                  class="peer sr-only"
+                  value="l89"
+                  name="size"
+                  id="l89"
+                  type="radio"
+                />
+                <div
+                  class="flex h-[36px] w-[73px] cursor-pointer overflow-hidden flex-col items-center justify-center rounded-md order-2 border border-gray-300 bg-gray-50 transition-transform duration-150 hover:border-blue-400 active:scale-95 peer-checked:border-[#816BFF]"
+                >
+                  <label
+                    class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase text-[#364A63] peer-checked:text-[#816BFF]"
+                    for="l89"
+                  >
+                    <span
+                      class="text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
+                      >L</span
+                    >$89
+                  </label>
+                </div>
+              </div>
+
+              <!-- Size XL -->
+              <div>
+                <input
+                  class="peer sr-only"
+                  value="xl99"
+                  name="size"
+                  id="xl99"
+                  type="radio"
+                />
+                <div
+                  class="flex h-[36px] w-[73px] cursor-pointer overflow-hidden flex-col items-center justify-center rounded-md order-2 border border-gray-300 bg-gray-50 transition-transform duration-150 hover:border-blue-400 active:scale-95 peer-checked:border-[#816BFF]"
+                >
+                  <label
+                    class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase text-[#364A63] peer-checked:text-[#816BFF]"
+                    for="xl99"
+                  >
+                    <span
+                      class="text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
+                      >XL</span
+                    >$99
+                  </label>
+                </div>
               </div>
             </div>
-            <div class="flex items-center gap-3">
-              <div>
-                <button>-</button>
-                <button>0</button>
-                <button>+</button>
-              </div>
-              <button>Add To Cart</button>
-              <button>💗</button>
+          </div>
+          <!-- Actions -->
+          <div class="flex items-center gap-3 mt-[20px]">
+            <div class="flex items-center justify-center bg-gray-50">
+              <button
+                class="border flex items-center justify-center w-[40px] h-[40px] text-4xl text-[#8091A7] transition-transform duration-150 active:scale-95 rounded-l-md"
+              >
+                <img src="https://i.ibb.co/XSjvvnK/3-M.png" alt="" />
+              </button>
+              <span
+                class="border flex items-center justify-center w-[40px] h-[40px] text-xl"
+              >
+                0
+              </span>
+              <button
+                class="border flex items-center justify-center w-[40px] h-[40px] text-4xl text-[#8091A7] transition-transform duration-150 active:scale-95 rounded-r-md"
+              >
+                <img src="https://i.ibb.co/xfzTrQs/7-D.png" alt="" />
+              </button>
             </div>
+
+            <button
+              class="bg-[#6576FF] hover:bg-[#6576FF]/95 py-[8px] px-[18px] flex items-center justify-center font-semibold text-white transition-transform duration-150 active:scale-95 rounded-md"
+            >
+              Add To Cart
+            </button>
+            <button>
+              <i
+                class="fa-regular fa-heart text-[#6576FF] size-[20px] text-[18px] transition-transform duration-150 active:scale-95"
+              ></i>
+            </button>
           </div>
         </div>
       </div>
     </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
