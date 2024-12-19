@@ -1,9 +1,8 @@
-console.log("Hello styles!");
 const images = ["./assets/watch-purple.png", "./assets/watch-cyan.png", "./assets/watch-blue.png", "./assets/watch-black.png"];
 const sizeTexts = document.querySelectorAll('.sizeText');
-// Catch items for update items quantity
 const qtyMinus = document.getElementById('qtyMinus');
 const qtyPlus = document.getElementById('qtyPlus');
+const continueShoppingBtn = document.getElementById('continueShopping');
 let quantity = 0;
 
 // Add event listeners to each color radio button
@@ -46,3 +45,22 @@ qtyPlus.addEventListener('click', () => {
   console.log(quantity, itemQty.innerText);
   itemQty.innerText = quantity; 
 });
+
+// Handle cart show using checkOutBtn
+checkOutBtn.addEventListener("click", () => {
+  cartSection.style.display = "flex";
+  checkOutBtn.style.display = "none";
+});
+
+// Hide cart
+cartSection.addEventListener('click', () => {
+cartSection.style.display = "none";
+checkOutBtn.style.display = "block";
+document.getElementById('cartBodyModal').addEventListener('click', e => e.stopPropagation())
+});
+
+// hide cart by clicking continue shopping button
+continueShoppingBtn.addEventListener("click", () => {
+  cartSection.style.display = "none";
+  checkOutBtn.style.display = "block";
+})

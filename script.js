@@ -73,7 +73,4 @@ const getSelectedRadioValue = (radioNodeList) => {
   return Array.from(radioNodeList).find(radio => radio.checked)?.value;
 }
 
-// Handle cart show using checkOutBtn
-checkOutBtn.addEventListener("click", () => {
-  cartSection.style.display = "flex";
-});
+
