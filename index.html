@@ -7,7 +7,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/style.css" />
     <title>Softnio - Classy Modern Smart watch</title>
   </head>
   <body>
@@ -81,7 +80,7 @@
                     <input
                       name="color"
                       type="radio"
-                      value="color#816BFF"
+                      value="purple"
                       class="peer size-4 cursor-pointer bg-[#816BFF] appearance-none rounded-full border-slate-300 checked:border-red-400 transition-all"
                       id="color-1"
                       checked
@@ -104,7 +103,7 @@
                     <input
                       name="color"
                       type="radio"
-                      value="color#1FCEC9"
+                      value="cyan"
                       class="peer size-4 cursor-pointer bg-[#1FCEC9] appearance-none rounded-full border-slate-300 checked:border-red-400 transition-all"
                       id="color-2"
                     />
@@ -126,7 +125,7 @@
                     <input
                       name="color"
                       type="radio"
-                      value="color#4B97D3"
+                      value="blue"
                       class="peer size-4 cursor-pointer bg-[#4B97D3] appearance-none rounded-full border-slate-300 checked:border-red-400 transition-all"
                       id="color-3"
                     />
@@ -148,7 +147,7 @@
                     <input
                       name="color"
                       type="radio"
-                      value="color#3B4747"
+                      value="black"
                       class="peer size-4 cursor-pointer bg-[#3B4747] appearance-none rounded-full border-slate-300 checked:border-red-400 transition-all"
                       id="color-4"
                     />
@@ -173,7 +172,7 @@
                 <div>
                   <input
                     class="peer sr-only"
-                    value="s69"
+                    value="S"
                     name="size"
                     id="s69"
                     type="radio"
@@ -198,7 +197,7 @@
                 <div>
                   <input
                     class="peer sr-only"
-                    value="m79"
+                    value="M"
                     name="size"
                     id="m79"
                     type="radio"
@@ -222,7 +221,7 @@
                 <div>
                   <input
                     class="peer sr-only"
-                    value="l89"
+                    value="L"
                     name="size"
                     id="l89"
                     type="radio"
@@ -246,7 +245,7 @@
                 <div>
                   <input
                     class="peer sr-only"
-                    value="xl99"
+                    value="XL"
                     name="size"
                     id="xl99"
                     type="radio"
@@ -280,7 +279,7 @@
                   id="itemQty"
                   class="border flex items-center justify-center w-[40px] h-[40px] text-xl"
                 >
-                  0
+                  1
                 </span>
                 <button
                   id="qtyPlus"
@@ -291,7 +290,7 @@
               </div>
 
               <button
-              id="addToCart"
+                id="addToCart"
                 class="bg-[#6576FF] hover:bg-[#6576FF]/95 py-[8px] px-[18px] flex items-center justify-center font-semibold text-white transition-transform duration-150 active:scale-95 rounded-md"
                 type="submit"
               >
@@ -306,19 +305,10 @@
           </div>
         </div>
       </section>
-      <button
-        class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-[#FFBB5A] hover:bg-[#FFBB5A]/90 text-gray-800 font-semibold px-[24px] py-[8px] rounded-full inline-flex items-center shadow-lg shadow-[#0000001A]"
-      >
-        <span>Checkout</span>
-        <span
-          id="checkoutCount"
-          class="ml-2 bg-white text-[#364A63] text-[14px] font-bold rounded-lg px-2 py-0.5 leading-none"
-        >
-          0
-        </span>
-      </button>
+
       <section
-        class="bg-[#11121B8C] flex justify-center items-center min-h-screen z-20"
+        id="cartSection"
+        class="bg-[#11121B8C] flex justify-center items-center min-h-screen z-20 min-h-[480px]"
       >
         <div
           class="bg-white rounded-lg shadow-lg p-[44px] w-full max-w-[651px]"
@@ -336,7 +326,7 @@
                 <th class="pb-4 font-normal text-right">Price</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="cartBody" style="max-height: 250px; overflow-y: auto">
               <tr class="border-b">
                 <td class="py-4 flex items-center">
                   <img
@@ -380,10 +370,16 @@
                 <td class="py-4 text-right font-bold">$79.00</td>
               </tr>
             </tbody>
+
             <tfoot>
               <tr class="border-t">
                 <td colspan="3" class="py-4 font-bold text-[16px]">Total</td>
-                <td class="py-4 font-bold text-center pr-5 text-[14px]">4</td>
+                <td
+                  id="totalQty"
+                  class="py-4 font-bold text-center pr-5 text-[14px]"
+                >
+                  4
+                </td>
                 <td class="py-4 font-bold text-right text-[18px]">$356.00</td>
               </tr>
             </tfoot>
@@ -402,6 +398,18 @@
           </div>
         </div>
       </section>
+      <button
+        id="checkOutBtn"
+        class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-[#FFBB5A] hover:bg-[#FFBB5A]/90 text-gray-800 font-semibold px-[24px] py-[8px] rounded-full inline-flex items-center shadow-lg shadow-[#0000001A] z-20 hidden"
+      >
+        <span>Checkout</span>
+        <span
+          id="checkoutCount"
+          class="ml-2 bg-white text-[#364A63] text-[14px] font-bold rounded-lg px-2 py-0.5 leading-none"
+        >
+          0
+        </span>
+      </button>
     </main>
     <script src="./script.js"></script>
     <script src="./style.js"></script>

@@ -4,6 +4,7 @@ const sizeTexts = document.querySelectorAll('.sizeText');
 // Catch items for update items quantity
 const qtyMinus = document.getElementById('qtyMinus');
 const qtyPlus = document.getElementById('qtyPlus');
+let quantity = 0;
 
 // Add event listeners to each color radio button
 colorRadios.forEach((radio, index) => {
@@ -34,6 +35,7 @@ sizeRadios.forEach((radio) => {
 qtyMinus.addEventListener('click', () => {
   if (quantity > 0) {
     quantity--;
+    console.log(quantity, itemQty.innerText);
     itemQty.innerText = quantity; 
   }
 });
@@ -41,5 +43,6 @@ qtyMinus.addEventListener('click', () => {
 // Plus items quantity
 qtyPlus.addEventListener('click', () => {
   quantity++;
+  console.log(quantity, itemQty.innerText);
   itemQty.innerText = quantity; 
 });
