@@ -11,306 +11,392 @@
     <title>Softnio - Classy Modern Smart watch</title>
   </head>
   <body>
-    <section class="w-[1280px] mx-auto">
-      <div class="flex items-center justify-center gap-[60px] h-screen">
-        <!-- Product image part -->
-        <div class="max-w-[630px] h-[721px]">
-          <img
-            id="productImage"
-            src="./assets/watch-purple.png"
-            alt=""
-            class="h-full w-full rounded-md object-cover object-center"
-          />
-        </div>
+    <main class="relative">
+      <section class="w-[1280px] mx-auto">
+        <div class="flex items-center justify-center gap-[60px] h-screen">
+          <!-- Product image part -->
+          <div class="max-w-[630px] h-[721px]">
+            <img
+              id="productImage"
+              src="./assets/watch-purple.png"
+              alt=""
+              class="h-full w-full rounded-md object-cover object-center"
+            />
+          </div>
 
-        <!-- Content part -->
-        <div class="w-[50%]">
-          <h2 class="text-[40px] text-[#364A63] font-bold">
-            Classy Modern Smart watch
-          </h2>
-          <!-- Ratings -->
-          <div class="flex items-center gap-2 mt-[10px]">
-            <div class="text-[#FFD200]">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-              <i class="fa-regular fa-star"></i>
+          <!-- Content part -->
+          <div class="w-[50%]">
+            <h2 class="text-[40px] text-[#364A63] font-bold">
+              Classy Modern Smart watch
+            </h2>
+            <!-- Ratings -->
+            <div class="flex items-center gap-2 mt-[10px]">
+              <div class="text-[#FFD200]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="text-[#8091A7] font-light">(2 Reviews)</div>
             </div>
-            <div class="text-[#8091A7] font-light">(2 Reviews)</div>
-          </div>
-          <!-- Title and descriptions -->
-          <div>
-            <h3 class="mt-[20px] text-[20px]">
-              <span class="line-through text-[#8091A7] font-light mr-1"
-                >$999.00</span
-              ><span class="text-[#6576FF] font-bold">$79.00</span>
-            </h3>
-            <p class="text-[18px] text-[#8091A7] leading-loose">
-              I must explain to you how all this mistaken idea of denoun cing
-              ple praising pain was born and I will give you a complete account
-              of the system, and expound the actual teaching.
-            </p>
-          </div>
-          <!-- Types and Models -->
-          <div class="flex items-center gap-5 mt-[20px]">
-            <span class="text-[#8091A7] font-light">
-              <p class="text-[14px]">Type</p>
-              <p class="text-[16px] font-bold">Watch</p>
-            </span>
-            <span class="text-[14px] text-[#8091A7] font-light">
-              <p class="text-[14px]">Model Number</p>
-              <p class="text-[16px] font-bold">Forerunner 290XT</p>
-            </span>
-          </div>
-          <!-- Brand Colors -->
-          <div class="mt-[20px]">
-            <h4 class="text-[#364A63] text-[18px] font-bold mb-[10px]">
-              Band Color
-            </h4>
-            <div class="flex gap-[20px]">
-              <div class="inline-flex items-center">
-                <label
-                  class="relative flex items-center cursor-pointer"
-                  for="color-1"
-                >
+            <!-- Title and descriptions -->
+            <div>
+              <h3 class="mt-[20px] text-[20px]">
+                <span class="line-through text-[#8091A7] font-light mr-1"
+                  >$999.00</span
+                ><span class="text-[#6576FF] font-bold">$79.00</span>
+              </h3>
+              <p class="text-[18px] text-[#8091A7] leading-loose">
+                I must explain to you how all this mistaken idea of denoun cing
+                ple praising pain was born and I will give you a complete
+                account of the system, and expound the actual teaching.
+              </p>
+            </div>
+            <!-- Types and Models -->
+            <div class="flex items-center gap-5 mt-[20px]">
+              <span class="text-[#8091A7] font-light">
+                <p class="text-[14px]">Type</p>
+                <p class="text-[16px] font-bold">Watch</p>
+              </span>
+              <span class="text-[14px] text-[#8091A7] font-light">
+                <p class="text-[14px]">Model Number</p>
+                <p class="text-[16px] font-bold">Forerunner 290XT</p>
+              </span>
+            </div>
+            <!-- Brand Colors -->
+            <div class="mt-[20px]">
+              <h4 class="text-[#364A63] text-[18px] font-bold mb-[10px]">
+                Band Color
+              </h4>
+              <div class="flex gap-[20px]">
+                <div class="inline-flex items-center">
+                  <label
+                    class="relative flex items-center cursor-pointer"
+                    for="color-1"
+                  >
+                    <input
+                      name="color"
+                      type="radio"
+                      value="color#816BFF"
+                      class="peer size-4 cursor-pointer bg-[#816BFF] appearance-none rounded-full border-slate-300 checked:border-red-400 transition-all"
+                      id="color-1"
+                      checked
+                    />
+                    <span
+                      class="absolute bg-[#816BFF] size-5 rounded-full opacity-0 peer-checked:opacity-100 peer-checked:bg-[#816BFF] peer-checked:size-[24px] transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+                    >
+                      <div
+                        class="size-5 rounded-full border-2 border-white"
+                      ></div>
+                    </span>
+                  </label>
+                </div>
+
+                <div class="inline-flex items-center">
+                  <label
+                    class="relative flex items-center cursor-pointer"
+                    for="color-2"
+                  >
+                    <input
+                      name="color"
+                      type="radio"
+                      value="color#1FCEC9"
+                      class="peer size-4 cursor-pointer bg-[#1FCEC9] appearance-none rounded-full border-slate-300 checked:border-red-400 transition-all"
+                      id="color-2"
+                    />
+                    <span
+                      class="absolute bg-[#1FCEC9] size-5 rounded-full opacity-0 peer-checked:opacity-100 peer-checked:bg-[#1FCEC9] peer-checked:size-[24px] transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+                    >
+                      <div
+                        class="size-5 rounded-full border-2 border-white"
+                      ></div>
+                    </span>
+                  </label>
+                </div>
+
+                <div class="inline-flex items-center">
+                  <label
+                    class="relative flex items-center cursor-pointer"
+                    for="color-3"
+                  >
+                    <input
+                      name="color"
+                      type="radio"
+                      value="color#4B97D3"
+                      class="peer size-4 cursor-pointer bg-[#4B97D3] appearance-none rounded-full border-slate-300 checked:border-red-400 transition-all"
+                      id="color-3"
+                    />
+                    <span
+                      class="absolute bg-[#4B97D3] size-5 rounded-full opacity-0 peer-checked:opacity-100 peer-checked:bg-[#4B97D3] peer-checked:size-[24px] transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+                    >
+                      <div
+                        class="size-5 rounded-full border-2 border-white"
+                      ></div>
+                    </span>
+                  </label>
+                </div>
+
+                <div class="inline-flex items-center">
+                  <label
+                    class="relative flex items-center cursor-pointer"
+                    for="color-4"
+                  >
+                    <input
+                      name="color"
+                      type="radio"
+                      value="color#3B4747"
+                      class="peer size-4 cursor-pointer bg-[#3B4747] appearance-none rounded-full border-slate-300 checked:border-red-400 transition-all"
+                      id="color-4"
+                    />
+                    <span
+                      class="absolute bg-[#3B4747] size-5 rounded-full opacity-0 peer-checked:opacity-100 peer-checked:bg-[#3B4747] peer-checked:size-[24px] transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+                    >
+                      <div
+                        class="size-5 rounded-full border-2 border-white"
+                      ></div>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- Sizes -->
+            <div class="mt-[20px] mb-[10px]">
+              <h4 class="text-[#364A63] text-[18px] font-bold mb-[10px]">
+                Wrist Size
+              </h4>
+              <div id="wristSize" class="flex gap-2">
+                <!-- Size S -->
+                <div>
                   <input
-                    name="color"
+                    class="peer sr-only"
+                    value="s69"
+                    name="size"
+                    id="s69"
                     type="radio"
-                    value="color#816BFF"
-                    class="peer size-4 cursor-pointer bg-[#816BFF] appearance-none rounded-full border-slate-300 checked:border-red-400 transition-all"
-                    id="color-1"
                     checked
                   />
-                  <span
-                    class="absolute bg-[#816BFF] size-5 rounded-full opacity-0 peer-checked:opacity-100 peer-checked:bg-[#816BFF] peer-checked:size-[24px] transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+                  <div
+                    class="flex h-[36px] w-[73px] cursor-pointer overflow-hidden flex-col items-center justify-center rounded-md order-2 border border-gray-300 bg-gray-50 transition-transform duration-150 hover:border-blue-400 active:scale-95 peer-checked:border-[#816BFF]"
                   >
-                    <div
-                      class="size-5 rounded-full border-2 border-white"
-                    ></div>
-                  </span>
-                </label>
-              </div>
-
-              <div class="inline-flex items-center">
-                <label
-                  class="relative flex items-center cursor-pointer"
-                  for="color-2"
-                >
-                  <input
-                    name="color"
-                    type="radio"
-                    value="color#1FCEC9"
-                    class="peer size-4 cursor-pointer bg-[#1FCEC9] appearance-none rounded-full border-slate-300 checked:border-red-400 transition-all"
-                    id="color-2"
-                  />
-                  <span
-                    class="absolute bg-[#1FCEC9] size-5 rounded-full opacity-0 peer-checked:opacity-100 peer-checked:bg-[#1FCEC9] peer-checked:size-[24px] transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-                  >
-                    <div
-                      class="size-5 rounded-full border-2 border-white"
-                    ></div>
-                  </span>
-                </label>
-              </div>
-
-              <div class="inline-flex items-center">
-                <label
-                  class="relative flex items-center cursor-pointer"
-                  for="color-3"
-                >
-                  <input
-                    name="color"
-                    type="radio"
-                    value="color#4B97D3"
-                    class="peer size-4 cursor-pointer bg-[#4B97D3] appearance-none rounded-full border-slate-300 checked:border-red-400 transition-all"
-                    id="color-3"
-                  />
-                  <span
-                    class="absolute bg-[#4B97D3] size-5 rounded-full opacity-0 peer-checked:opacity-100 peer-checked:bg-[#4B97D3] peer-checked:size-[24px] transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-                  >
-                    <div
-                      class="size-5 rounded-full border-2 border-white"
-                    ></div>
-                  </span>
-                </label>
-              </div>
-
-              <div class="inline-flex items-center">
-                <label
-                  class="relative flex items-center cursor-pointer"
-                  for="color-4"
-                >
-                  <input
-                    name="color"
-                    type="radio"
-                    value="color#3B4747"
-                    class="peer size-4 cursor-pointer bg-[#3B4747] appearance-none rounded-full border-slate-300 checked:border-red-400 transition-all"
-                    id="color-4"
-                  />
-                  <span
-                    class="absolute bg-[#3B4747] size-5 rounded-full opacity-0 peer-checked:opacity-100 peer-checked:bg-[#3B4747] peer-checked:size-[24px] transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-                  >
-                    <div
-                      class="size-5 rounded-full border-2 border-white"
-                    ></div>
-                  </span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <!-- Sizes -->
-          <div class="mt-[20px] mb-[10px]">
-            <h4 class="text-[#364A63] text-[18px] font-bold mb-[10px]">
-              Wrist Size
-            </h4>
-            <div id="wristSize" class="flex gap-2">
-              <!-- Size S -->
-              <div>
-                <input
-                  class="peer sr-only"
-                  value="s69"
-                  name="size"
-                  id="s69"
-                  type="radio"
-                  checked
-                />
-                <div
-                  class="flex h-[36px] w-[73px] cursor-pointer overflow-hidden flex-col items-center justify-center rounded-md order-2 border border-gray-300 bg-gray-50 transition-transform duration-150 hover:border-blue-400 active:scale-95 peer-checked:border-[#816BFF]"
-                >
-                  <label
-                    class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase peer-checked:text-[#816BFF]"
-                    for="s69"
-                  >
-                    <span class="text-[#364A63] text-[18px] font-bold mr-1"
-                      >S</span
-                    >$69
-                  </label>
+                    <label
+                      class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase peer-checked:text-[#816BFF]"
+                      for="s69"
+                    >
+                      <span class="text-[#364A63] text-[18px] font-bold mr-1"
+                        >S</span
+                      >$69
+                    </label>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Size M -->
-              <div>
-                <input
-                  class="peer sr-only"
-                  value="m79"
-                  name="size"
-                  id="m79"
-                  type="radio"
-                />
-                <div
-                  class="flex h-[36px] w-[73px] cursor-pointer overflow-hidden flex-col items-center justify-center rounded-md order-2 border border-gray-300 bg-gray-50 transition-transform duration-150 hover:border-blue-400 active:scale-95 peer-checked:border-[#816BFF]"
-                >
-                  <label
-                    class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase text-[#364A63] peer-checked:text-[#816BFF]"
-                    for="m79"
+                <!-- Size M -->
+                <div>
+                  <input
+                    class="peer sr-only"
+                    value="m79"
+                    name="size"
+                    id="m79"
+                    type="radio"
+                  />
+                  <div
+                    class="flex h-[36px] w-[73px] cursor-pointer overflow-hidden flex-col items-center justify-center rounded-md order-2 border border-gray-300 bg-gray-50 transition-transform duration-150 hover:border-blue-400 active:scale-95 peer-checked:border-[#816BFF]"
                   >
-                    <span
-                      class="text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
-                      >M</span
-                    >$79
-                  </label>
+                    <label
+                      class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase text-[#364A63] peer-checked:text-[#816BFF]"
+                      for="m79"
+                    >
+                      <span
+                        class="text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
+                        >M</span
+                      >$79
+                    </label>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Size L -->
-              <div>
-                <input
-                  class="peer sr-only"
-                  value="l89"
-                  name="size"
-                  id="l89"
-                  type="radio"
-                />
-                <div
-                  class="flex h-[36px] w-[73px] cursor-pointer overflow-hidden flex-col items-center justify-center rounded-md order-2 border border-gray-300 bg-gray-50 transition-transform duration-150 hover:border-blue-400 active:scale-95 peer-checked:border-[#816BFF]"
-                >
-                  <label
-                    class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase text-[#364A63] peer-checked:text-[#816BFF]"
-                    for="l89"
+                <!-- Size L -->
+                <div>
+                  <input
+                    class="peer sr-only"
+                    value="l89"
+                    name="size"
+                    id="l89"
+                    type="radio"
+                  />
+                  <div
+                    class="flex h-[36px] w-[73px] cursor-pointer overflow-hidden flex-col items-center justify-center rounded-md order-2 border border-gray-300 bg-gray-50 transition-transform duration-150 hover:border-blue-400 active:scale-95 peer-checked:border-[#816BFF]"
                   >
-                    <span
-                      class="text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
-                      >L</span
-                    >$89
-                  </label>
+                    <label
+                      class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase text-[#364A63] peer-checked:text-[#816BFF]"
+                      for="l89"
+                    >
+                      <span
+                        class="text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
+                        >L</span
+                      >$89
+                    </label>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Size XL -->
-              <div>
-                <input
-                  class="peer sr-only"
-                  value="xl99"
-                  name="size"
-                  id="xl99"
-                  type="radio"
-                />
-                <div
-                  class="flex h-[36px] w-[73px] cursor-pointer overflow-hidden flex-col items-center justify-center rounded-md order-2 border border-gray-300 bg-gray-50 transition-transform duration-150 hover:border-blue-400 active:scale-95 peer-checked:border-[#816BFF]"
-                >
-                  <label
-                    class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase text-[#364A63] peer-checked:text-[#816BFF]"
-                    for="xl99"
+                <!-- Size XL -->
+                <div>
+                  <input
+                    class="peer sr-only"
+                    value="xl99"
+                    name="size"
+                    id="xl99"
+                    type="radio"
+                  />
+                  <div
+                    class="flex h-[36px] w-[73px] cursor-pointer overflow-hidden flex-col items-center justify-center rounded-md order-2 border border-gray-300 bg-gray-50 transition-transform duration-150 hover:border-blue-400 active:scale-95 peer-checked:border-[#816BFF]"
                   >
-                    <span
-                      class="text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
-                      >XL</span
-                    >$99
-                  </label>
+                    <label
+                      class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase text-[#364A63] peer-checked:text-[#816BFF]"
+                      for="xl99"
+                    >
+                      <span
+                        class="text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
+                        >XL</span
+                      >$99
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Actions -->
-          <div class="flex items-center gap-3 mt-[20px]">
-            <div class="flex items-center justify-center bg-gray-50">
+            <!-- Actions -->
+            <div class="flex items-center gap-3 mt-[20px]">
+              <div class="flex items-center justify-center bg-gray-50">
+                <button
+                  id="qtyMinus"
+                  class="border flex items-center justify-center w-[40px] h-[40px] text-4xl text-[#8091A7] transition-transform duration-150 active:scale-95 rounded-l-md"
+                >
+                  <img src="https://i.ibb.co/xfzTrQs/7-D.png" alt="" />
+                </button>
+                <span
+                  id="itemQty"
+                  class="border flex items-center justify-center w-[40px] h-[40px] text-xl"
+                >
+                  0
+                </span>
+                <button
+                  id="qtyPlus"
+                  class="border flex items-center justify-center w-[40px] h-[40px] text-4xl text-[#8091A7] transition-transform duration-150 active:scale-95 rounded-r-md"
+                >
+                  <img src="https://i.ibb.co/XSjvvnK/3-M.png" alt="" />
+                </button>
+              </div>
+
               <button
-                id="qtyMinus"
-                class="border flex items-center justify-center w-[40px] h-[40px] text-4xl text-[#8091A7] transition-transform duration-150 active:scale-95 rounded-l-md"
+                class="bg-[#6576FF] hover:bg-[#6576FF]/95 py-[8px] px-[18px] flex items-center justify-center font-semibold text-white transition-transform duration-150 active:scale-95 rounded-md"
               >
-                <img src="https://i.ibb.co/xfzTrQs/7-D.png" alt="" />
+                Add To Cart
               </button>
-              <span
-                id="itemQty"
-                class="border flex items-center justify-center w-[40px] h-[40px] text-xl"
-              >
-                0
-              </span>
-              <button
-                id="qtyPlus"
-                class="border flex items-center justify-center w-[40px] h-[40px] text-4xl text-[#8091A7] transition-transform duration-150 active:scale-95 rounded-r-md"
-              >
-                <img src="https://i.ibb.co/XSjvvnK/3-M.png" alt="" />
+              <button>
+                <i
+                  class="fa-regular fa-heart text-[#6576FF] size-[20px] text-[18px] transition-transform duration-150 active:scale-95"
+                ></i>
               </button>
             </div>
-
+          </div>
+        </div>
+      </section>
+      <button
+        class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-[#FFBB5A] hover:bg-[#FFBB5A]/90 text-gray-800 font-semibold px-[24px] py-[8px] rounded-full inline-flex items-center shadow-lg shadow-[#0000001A]"
+      >
+        <span>Checkout</span>
+        <span
+          id="checkoutCount"
+          class="ml-2 bg-white text-[#364A63] text-[14px] font-bold rounded-lg px-2 py-0.5 leading-none"
+        >
+          0
+        </span>
+      </button>
+      <section
+        class="bg-[#11121B8C] flex justify-center items-center min-h-screen z-20"
+      >
+        <div
+          class="bg-white rounded-lg shadow-lg p-[44px] w-full max-w-[651px]"
+        >
+          <h2 class="text-[22px] font-bold mb-6 text-[#364A63]">Your Cart</h2>
+          <table
+            class="w-full text-left border-collapse text-[#364A63] text-[14px]"
+          >
+            <thead>
+              <tr class="border-b text-[#8091A7]">
+                <th class="pb-4 font-normal">Item</th>
+                <th class="pb-4 font-normal">Color</th>
+                <th class="pb-4 font-normal">Size</th>
+                <th class="pb-4 font-normal">Qnt</th>
+                <th class="pb-4 font-normal text-right">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b">
+                <td class="py-4 flex items-center">
+                  <img
+                    src="./assets/watch-black.png"
+                    alt="Black Smart Watch"
+                    class="w-12 h-12 mr-4 rounded-md"
+                  />
+                  <span>Classy Modern Smart Watch</span>
+                </td>
+                <td class="py-4">Black</td>
+                <td class="py-4 font-bold">XL</td>
+                <td class="py-4">1</td>
+                <td class="py-4 text-right font-bold">$99.00</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-4 flex items-center">
+                  <img
+                    src="./assets/watch-purple.png"
+                    alt="Purple Smart Watch"
+                    class="w-12 h-12 mr-4 rounded-md"
+                  />
+                  <span>Classy Modern Smart Watch</span>
+                </td>
+                <td class="py-4">Purple</td>
+                <td class="py-4 font-bold">L</td>
+                <td class="py-4">2</td>
+                <td class="py-4 text-right font-bold">$178.00</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-4 flex items-center">
+                  <img
+                    src="./assets/watch-cyan.png"
+                    alt="Cyan Smart Watch"
+                    class="w-12 h-12 mr-4 rounded-md"
+                  />
+                  <span>Classy Modern Smart Watch</span>
+                </td>
+                <td class="py-4">Cyan</td>
+                <td class="py-4 font-bold">M</td>
+                <td class="py-4">1</td>
+                <td class="py-4 text-right font-bold">$79.00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="border-t">
+                <td colspan="3" class="py-4 font-bold text-[16px]">Total</td>
+                <td class="py-4 font-bold text-center pr-5 text-[14px]">4</td>
+                <td class="py-4 font-bold text-right text-[18px]">$356.00</td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="flex justify-end gap-[24px] mt-6">
             <button
-              class="bg-[#6576FF] hover:bg-[#6576FF]/95 py-[8px] px-[18px] flex items-center justify-center font-semibold text-white transition-transform duration-150 active:scale-95 rounded-md"
+              class="px-4 py-2 text-[#364A63] font-semibold hover:bg-gray-300 border rounded-md transition-transform duration-150 active:scale-95"
             >
-              Add To Cart
+              Continue Shopping
             </button>
-            <button>
-              <i
-                class="fa-regular fa-heart text-[#6576FF] size-[20px] text-[18px] transition-transform duration-150 active:scale-95"
-              ></i>
+            <button
+              class="px-4 py-2 bg-[#6576FF] text-white rounded-md hover:bg-[#6576FF]/95 font-semibold transition-transform duration-150 active:scale-95"
+            >
+              Checkout
             </button>
           </div>
         </div>
-      </div>
-    </section>
-    <button
-      class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-[#FFBB5A] hover:bg-[#FFBB5A]/90 text-gray-800 font-semibold px-[24px] py-[8px] rounded-full inline-flex items-center shadow-lg shadow-[#0000001A]"
-    >
-      <span>Checkout</span>
-      <span
-        id="checkoutCount"
-        class="ml-2 bg-white text-[#364A63] text-[14px] font-bold rounded-lg px-2 py-0.5 leading-none"
-      >
-        0
-      </span>
-    </button>
-
+      </section>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
