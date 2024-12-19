@@ -11,7 +11,7 @@
   </head>
   <body>
     <main class="relative">
-      <section class="lg:w-[1280px] w-full mx-auto lg:px-0 px-10 py-10">
+      <section class="lg:w-[1280px] w-full mx-auto lg:px-0 px-5 py-5">
         <div
           class="flex items-center lg:flex-row flex-col justify-center gap-[60px] lg:h-screen"
         >
@@ -308,7 +308,7 @@
 
       <section
         id="cartSection"
-        class="bg-[#11121B8C] flex justify-center items-center min-h-screen z-20 min-h-[480px]"
+        class="bg-[#11121B8C] flex justify-center items-center min-h-screen fixed top-0 left-0 right-0 z-20 min-h-[480px] hidden"
       >
         <div
           class="bg-white rounded-lg shadow-lg p-[44px] w-full max-w-[651px]"
@@ -380,7 +380,9 @@
                 >
                   4
                 </td>
-                <td class="py-4 font-bold text-right text-[18px]">$356.00</td>
+                <td class="py-4 font-bold text-right text-[18px]">
+                  $<span id="totalPrice">356</span>.00
+                </td>
               </tr>
             </tfoot>
           </table>
@@ -400,7 +402,7 @@
       </section>
       <button
         id="checkOutBtn"
-        class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-[#FFBB5A] hover:bg-[#FFBB5A]/90 text-gray-800 font-semibold px-[24px] py-[8px] rounded-full inline-flex items-center shadow-lg shadow-[#0000001A] z-20 hidden"
+        class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-[#FFBB5A] hover:bg-[#FFBB5A]/90 text-gray-800 font-semibold px-[24px] py-[8px] rounded-full inline-flex items-center shadow-lg shadow-[#0000001A] z-10 hidden"
       >
         <span>Checkout</span>
         <span
