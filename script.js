@@ -1,39 +1,31 @@
 console.log("Hello world!")
-
-const images = ["./assets/watch-purple.png", "./assets/watch-cyan.png", "./assets/watch-blue.png", "./assets/watch-black.png"]
-
-
 // Catch all the radio of colors
 const colorRadios = document.querySelectorAll('input[name="color"]');
+// Catch all the radio of sizes
+const sizeRadios = document.querySelectorAll('input[name="size"]');
 // Select the product image element
 const productImage = document.getElementById('productImage');
-
-// Add event listeners to each radio button
-colorRadios.forEach((radio, index) => {
-  radio.addEventListener('change', () => {
-
-    console.log("clicked", productImage);
-    productImage.src = images[index];
-  });
-});
-
-// Catch items for update items quantity
-const qtyMinus = document.getElementById('qtyMinus');
-const qtyPlus = document.getElementById('qtyPlus');
 const itemQty = document.getElementById('itemQty');
 
-let quantity = 0;
-
-// Minus item quantity
-qtyMinus.addEventListener('click', () => {
-  if (quantity > 0) {
-    quantity--;
-    itemQty.innerText = quantity; 
+const cart = [
+  {
+    title: "",
+    price: 0,
+    image: "",
+    color: "",
+    size: "",
+    qty: 0,
   }
-});
+];
+let title =  document.getElementById('title').innerText;
+let price = document.getElementById('price').innerText;
+let color;
+let size;
+let addToCartBtn = document.getElementById('addToCart');
 
-// Plus items quantity
-qtyPlus.addEventListener('click', () => {
-  quantity++;
-  itemQty.innerText = quantity; 
-});
+
+console.log(colorRadios[0].value, sizeRadios[0].value);
+addToCartBtn.addEventListener("click", () => {
+  console.log("Click",{ title, price, image: productImage.src, color, size});
+  // console.log(title, price, color, size, qty, itemQty, productImage);
+})

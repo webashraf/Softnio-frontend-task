@@ -12,8 +12,10 @@
   </head>
   <body>
     <main class="relative">
-      <section class="w-[1280px] mx-auto">
-        <div class="flex items-center justify-center gap-[60px] h-screen">
+      <section class="lg:w-[1280px] w-full mx-auto lg:px-0 px-10 py-10">
+        <div
+          class="flex items-center lg:flex-row flex-col justify-center gap-[60px] lg:h-screen"
+        >
           <!-- Product image part -->
           <div class="max-w-[630px] h-[721px]">
             <img
@@ -25,8 +27,9 @@
           </div>
 
           <!-- Content part -->
-          <div class="w-[50%]">
-            <h2 class="text-[40px] text-[#364A63] font-bold">
+          <div class="lg:w-[50%]">
+            <!-- Title -->
+            <h2 id="title" class="text-[40px] text-[#364A63] font-bold">
               Classy Modern Smart watch
             </h2>
             <!-- Ratings -->
@@ -40,12 +43,12 @@
               </div>
               <div class="text-[#8091A7] font-light">(2 Reviews)</div>
             </div>
-            <!-- Title and descriptions -->
+            <!-- Price and descriptions -->
             <div>
               <h3 class="mt-[20px] text-[20px]">
                 <span class="line-through text-[#8091A7] font-light mr-1"
                   >$999.00</span
-                ><span class="text-[#6576FF] font-bold">$79.00</span>
+                ><span id="price" class="text-[#6576FF] font-bold">$79.00</span>
               </h3>
               <p class="text-[18px] text-[#8091A7] leading-loose">
                 I must explain to you how all this mistaken idea of denoun cing
@@ -183,7 +186,8 @@
                       class="flex cursor-pointer size-full items-center justify-center text-[#8091A7] text-[13px] uppercase peer-checked:text-[#816BFF]"
                       for="s69"
                     >
-                      <span class="text-[#364A63] text-[18px] font-bold mr-1"
+                      <span
+                        class="sizeText text-[#6576FF] text-[18px] font-bold mr-1"
                         >S</span
                       >$69
                     </label>
@@ -207,7 +211,7 @@
                       for="m79"
                     >
                       <span
-                        class="text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
+                        class="sizeText text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
                         >M</span
                       >$79
                     </label>
@@ -231,7 +235,7 @@
                       for="l89"
                     >
                       <span
-                        class="text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
+                        class="sizeText text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
                         >L</span
                       >$89
                     </label>
@@ -255,7 +259,7 @@
                       for="xl99"
                     >
                       <span
-                        class="text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
+                        class="sizeText text-[#364A63] text-[18px] font-bold mr-1 peer-checked:text-[#816BFF]"
                         >XL</span
                       >$99
                     </label>
@@ -287,7 +291,9 @@
               </div>
 
               <button
+              id="addToCart"
                 class="bg-[#6576FF] hover:bg-[#6576FF]/95 py-[8px] px-[18px] flex items-center justify-center font-semibold text-white transition-transform duration-150 active:scale-95 rounded-md"
+                type="submit"
               >
                 Add To Cart
               </button>
@@ -398,5 +404,6 @@
       </section>
     </main>
     <script src="./script.js"></script>
+    <script src="./style.js"></script>
   </body>
 </html>
