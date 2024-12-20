@@ -9,6 +9,7 @@ const checkoutCount = document.getElementById("checkoutCount");
 const cartSection = document.getElementById("cartSection");
 const totalPrice = document.getElementById("totalPrice");
 let cart = [];
+let quantity = 0;
 
 // Handle add item on the cart
 const handleAddToCart = () => {
@@ -22,6 +23,9 @@ const handleAddToCart = () => {
 
   // Handle hide and show checkout button
   checkOutBtn.style.display = cart.length > 0 ? "block" : "none";
+
+  quantity = 1;
+  itemQty.innerText = 1;
 }
 // Handle add to cart
 addToCartBtn.addEventListener("click", handleAddToCart);

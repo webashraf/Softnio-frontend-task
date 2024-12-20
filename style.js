@@ -3,7 +3,7 @@ const sizeTexts = document.querySelectorAll('.sizeText');
 const qtyMinus = document.getElementById('qtyMinus');
 const qtyPlus = document.getElementById('qtyPlus');
 const continueShoppingBtn = document.getElementById('continueShopping');
-let quantity = 0;
+
 
 // Add event listeners to each color radio button
 colorRadios.forEach((radio, index) => {
